@@ -40,6 +40,7 @@ A program that applies a grayscale filters to multiple images using the average 
 14. The application contains 2 packages: Package 1 contains the test application, package 2 contains the rest of the classes
 
 15. The application contains Producer-Consumer with the following requirements:
+    
 a. A new thread is allocated for reading from the source image file - Producer Thread. It enters Not Runnable after reading a segment of information
 
 b. A new thread (Consumer Thread) is allocated for consuming the information provided by the Producer Thread. "Multithread communication" (notify) is used.
@@ -51,6 +52,7 @@ d. Synchronization elements are used to protect against interference with other 
 e. After consuming the entire source image information, processing begins
 
 16. The application contains communication through Pipes with the following requirements:
+    
 a. Consumer uses a Pipe to transmit the processed image to an object of type WriterResult
 
 b. Transmission through the pipe is done by partitioning the information into 4 segments.
